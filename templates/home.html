@@ -11,18 +11,27 @@
       height: 360px;
       width: 100%;
       object-fit: cover;
+      margin-bottom: 16px;
     }
   
   </style>
     
 </head>
-<body>
+<body> 
+  {% include 'nav.html' %}
+   <img class='img-fluid' id='banner' src="https://analytica-careers-website--navinapandhare0.repl.co/static/banner.jpeg" width = "1000" height = '350'>
    <div class='container'>
     <h1 class = "text-center mt-4 mb-4">Careers at Analytica<h1>
-      <img class='img-fluid' id='banner' src="https://analytica-careers-website--navinapandhare0.repl.co/static/banner.jpeg" width = "1000" 
-   height = '350'>
-      <h2 class = "text-center">About Analytica</h2>
+     <div class="row" style="margin-bottom:16px">
+      <div class="col-md-6">
       <p class='lead'>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.  In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided</p>
+
+      </div >
+      <div class="d-none d-md-block col-md-6">
+        <img src = "/static/people.jpg" style=" height:320px ; border-radius:5px;">
+        </div>
+
+    </div>
   
       <h2 class = "text-center mt-4 mb-4">Job Openings</h2>
       <p>
@@ -31,9 +40,9 @@
         {% endfor %}
       </p>
       <div class='text-center'>
-        <button class="btn btn-primary btn-lg">Contact Us</button>
-        <p class="mt-4">Copyright 2023, Analytica</p>
+        <a class="btn btn-primary btn-lg" href="mailto:hello@analytica.ai?subject=Questions%20about%20Job%20Openings&body=My%20name%3A%20%3CYour%20name%3E%0D%0AMy%20Question%3A%20%3CYour%20Question%3E">Contact Us</a>
       </div>
   </div>
+      {% include 'footer.html' %}
  </body>
 </html>
