@@ -14,6 +14,8 @@ def load_jobs_from_db():
       jobs.append(row._mapping)
     return jobs
 
+
+
   
 
 
